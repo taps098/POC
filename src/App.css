@@ -79,3 +79,26 @@ progress::-webkit-progress-value {
 .red::-webkit-progress-value {
   background-color: #FF7083;
 }
+
+
+/*Overridden Ant Styles*/
+
+.pagination .ant-pagination-item-active{
+  background-color: #2055B5;
+  border-color: #2055B5;
+}
+
+.pagination .ant-pagination-item-active a,
+.pagination .ant-pagination-item-active a:hover,
+.pagination .ant-pagination-item-active a:focus,
+.pagination .ant-pagination-item-active a:active{
+  color: white;
+}
+
+
+/*.ant-pagination-item-active{*/
+/*  background-color: #2055B5;*/
+/*}*/
+/*.ant-pagination-item-active a {*/
+/*  color: #fff;*/
+/*}*/

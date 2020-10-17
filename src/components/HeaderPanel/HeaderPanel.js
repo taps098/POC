@@ -42,12 +42,15 @@ function HeaderPanel(props){
 
             </Select>
       </li>
-      <li>
+      <li className="pagination">
         <Pagination
           defaultCurrent={1}
           total={50}
           onChange={(page)=>props.chosePage(page)}
         />
+
+        {/*<Button>1</Button>*/}
+
       </li>
       <li>
         <Button>Go</Button>

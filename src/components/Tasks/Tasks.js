@@ -49,7 +49,6 @@ class Tasks extends React.Component{
                             onSearch={(value) =>{this.handleSearch(value)}}
                             // disabled={this.props.filter_data.searchEnabled ? false : true}
                             allowClear
-
                             placeholder="input search text"  enterButton />
             </Input.Group>
 

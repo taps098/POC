@@ -5,13 +5,15 @@ const getTasks = (task_store) => {
   let page = task_store.pagination.page || 1,
     per_page = task_store.pagination.tasksPerPage || 30,
     offset = (page - 1) * per_page;
-  console.log("OFFSET", offset, "per page", per_page);
+  // console.log("OFFSET", offset, "per page", per_page);
   let query = task_store.filter.query,
     type = task_store.filter.type;
   return produce(task_store, (draft) => {
     let tasks = draft.tasks;
     if (typeof query !== "undefined" && query !== ''){
       tasks = tasks.filter(item =>{
+
+        // console.log(item[])
         return item[type].toLowerCase().indexOf(query.toLowerCase()) > -1
       })
     }
